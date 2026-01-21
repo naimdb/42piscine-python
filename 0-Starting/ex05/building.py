@@ -1,10 +1,14 @@
 import sys
 
+
 def main():
+    """Count various types of characters in the provided text."""
+
     args = sys.argv[1:]
 
     if len(args) == 0:
-        text = input("What is the text to count?\n")
+        print("What is the text to count?")
+        text = sys.stdin.read()
     else:
         assert len(args) == 1, "more than one argument is provided"
         text = args[0]

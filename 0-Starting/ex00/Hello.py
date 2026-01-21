@@ -8,8 +8,7 @@ ft_dict = {"Hello" : "titi!"}
 # print(ft_set)
 # print(ft_dict)
 
-ft_list.remove("tata!")
-ft_list.append("World!")
+ft_list[1] = "World!"
 
 ft_tuple = ("Hello", "Switzerland!")
 
