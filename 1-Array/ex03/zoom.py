@@ -4,6 +4,7 @@ from load_image import ft_load
 
 
 def main():
+    """Zoom into the center of an image and convert it to grayscale."""
 
     new_array = ft_load("animal.jpeg")
 

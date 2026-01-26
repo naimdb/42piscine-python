@@ -1,11 +1,14 @@
 from load_csv import load
 import matplotlib.pyplot as plt
 
+
 def main():
+    """Plot life expectancy projections for Switzerland."""
+
     df = load("life_expectancy_years.csv")
     if df is None:
         return
-    
+
     country = "Switzerland"
     country_data = df[df["country"] == country]
     years = country_data.columns[1:]

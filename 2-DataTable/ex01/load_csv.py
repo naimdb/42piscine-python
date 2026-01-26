@@ -1,15 +1,17 @@
 import pandas as pd
 
+
 def load(path: str) -> pd.DataFrame | None:
     """
     Load a CSV dataset and print its dimensions.
-    
+
     Args:
         path: Path to the CSV file
-        
+
     Returns:
         DataFrame if successful, None otherwise
     """
+
     try:
         dataframe = pd.read_csv(path)
         print(f"Loading dataset of dimensions {dataframe.shape}")
