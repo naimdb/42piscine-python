@@ -1,13 +1,15 @@
 from abc import ABC, abstractmethod
 
+
 class Character(ABC):
     """
     A base class representing a character in a story.
 
     Attributes:
         first_name (str): The name of the character.
-        is_alive (bool): Status indicating if the character is alive. Default is True.
-    
+        is_alive (bool):
+        Status indicating if the character is alive. Default is True.
+
     Methods:
         die(): Sets the character's is_alive status to False.
     """
@@ -24,20 +26,22 @@ class Character(ABC):
 
     def __str__(self):
         """Return a string representation of the character."""
-        status = "alive" if self.is_alive else "deceased"
         return f"Vector: ({self.family_name}, {self.eyes}, {self.hairs})"
-    
+
     def __repr__(self):
         """Return an official string representation of the character."""
-        return f"{type(self).__name__}('{self.first_name}', is_alive={self.is_alive})"
+        return f"{type(self).__name__}('{self.first_name}',\
+            is_alive={self.is_alive})"
+
 
 class Stark(Character):
     """
     Representing the Stark family.
 
     Attributes:
-        name (str): The name of the Stark character.
-        is_alive (bool): Status indicating if the character is alive. Default is True.
+        first_name (str): The name of the Stark character.
+        is_alive (bool):
+        Status indicating if the character is alive. Default is True.
     """
 
     def __init__(self, name: str, is_alive: bool = True):

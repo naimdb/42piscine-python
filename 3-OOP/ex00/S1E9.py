@@ -1,13 +1,15 @@
 from abc import ABC, abstractmethod
 
+
 class Character(ABC):
     """
     A base class representing a character in a story.
 
     Attributes:
         name (str): The name of the character.
-        is_alive (bool): Status indicating if the character is alive. Default is True.
-    
+        is_alive (bool):
+        Status indicating if the character is alive. Default is True.
+
     Methods:
         die(): Sets the character's is_alive status to False.
     """
@@ -22,13 +24,15 @@ class Character(ABC):
         """Set the character's status to not alive."""
         self.is_alive = False
 
+
 class Stark(Character):
     """
     A class representing a member of House Stark.
 
     Attributes:
         name (str): The name of the Stark character.
-        is_alive (bool): Status indicating if the character is alive. Default is True.
+        is_alive (bool):
+        Status indicating if the character is alive. Default is True.
     """
 
     def __init__(self, name: str, is_alive: bool = True):
