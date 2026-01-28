@@ -1,4 +1,13 @@
 def ft_statistics(*args, **kwargs):
+    """
+    Calculate and print statistical measures based on provided arguments.
+
+    :param args: A variable number of numerical arguments.
+    :param kwargs: A variable number of keyword arguments
+    specifying which statistics to compute.
+
+    Supported: mean, median, quartile, std (standard deviation), var (variance)
+    """
     numbers = sorted(args)
     n_num = len(numbers)
 
